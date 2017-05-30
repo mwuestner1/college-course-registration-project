@@ -382,7 +382,7 @@ public class Transcript extends javax.swing.JFrame {
     private void item_printActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_item_printActionPerformed
         MessageFormat header = new MessageFormat("Unofficial Transcript");
         
-        MessageFormat footer = new MessageFormat("Page(0, number, integer");
+        MessageFormat footer = new MessageFormat("Page{0, number, integer}");
         
         try {
             table_transcript.print(JTable.PrintMode.NORMAL, header, footer);

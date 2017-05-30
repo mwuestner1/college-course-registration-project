@@ -784,7 +784,7 @@ public class Courses extends javax.swing.JFrame {
     private void btn_printActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_printActionPerformed
         MessageFormat header = new MessageFormat("List of Courses");
         
-        MessageFormat footer = new MessageFormat("Page(0, number, integer");
+        MessageFormat footer = new MessageFormat("Page{0, number, integer}");
         
         try {
             table_course.print(JTable.PrintMode.NORMAL, header, footer);
